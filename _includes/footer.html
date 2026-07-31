@@ -1,8 +1,8 @@
-<footer class="site-footer">
+<footer class="site-footer" id="contacts">
 
   <div class="wrapper">
 </br>
-    <h2 class="footer-heading">Contactos</h2>
+    <h2 class="footer-heading">{% if page.layout == "home" %}Contactos{% endif %}{% if page.layout == "en" %}Contacts{% endif %}</h2>
 
     <div class="footer">
 
@@ -11,10 +11,11 @@
             {% if site.email %}
             Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
-
+          
           </h3>
-
+          <img src="/images/rhodium_emblem.png">    
     </div>
+    
 
   </div>
 

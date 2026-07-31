@@ -21,13 +21,15 @@
 title: Rhodium Advisors
 email: info@rhodiumadvisors.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Em breve
+  Rhodium Advisors, website em construção!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.rhodiumadvisors.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
 
+include:
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
