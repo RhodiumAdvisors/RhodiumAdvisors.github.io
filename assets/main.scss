@@ -42,7 +42,7 @@ a:hover {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   text-align: center;
-  
+
   .box {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -56,7 +56,7 @@ a:hover {
   }
 }
 
-.final-box {
+.final-box, .logo-box {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #031028;
@@ -73,7 +73,7 @@ a:hover {
   button {
     align-items: center;
     background: #031028;
-    border: 0 solid #031028;
+    border: 0.5px solid #EFBF04;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
     color: #fff;
@@ -94,6 +94,7 @@ a:hover {
     -webkit-user-select: none;
     touch-action: manipulation;
   }
+  
 }
 
 .site-title img {
@@ -109,10 +110,22 @@ a:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .site-header {
+    padding: 10px;
+    margin-left: -10px;
+  }
+
+  .site-title img {
+    width: 50px;
+    padding: 0px;
+  }
+
   .site-nav {
     position: absolute;
-    top: 9px;
+    top: 15px;
     right: 15px;
+    height: 30px;
+    padding-bottom: 5px;
     background-color: #fdfdfd;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
@@ -123,6 +136,10 @@ a:hover {
     color: #000;
     margin-left: 0px;
     padding: 5px 5px;
+    img {
+      height: 15px;
+      padding-right: 5px;
+    }
   }
 }
 
