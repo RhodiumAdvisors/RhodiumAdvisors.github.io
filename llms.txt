@@ -1,0 +1,13 @@
+# Rhodium Advisors
+
+> With 25 years of cross-functional expertise, Rhodium integrates legal, tax, and real estate advisory to structure high-yield assets across Portugal. Covering the complete acquisition lifecycle—from strategic planning through to luxury asset management—the ecosystem delivers maximum efficiency and capital protection. Rhodium serves as a trusted advisory partner, converting complex market dynamics into a seamless, transparent, and highly profitable investment.
+
+## Homepage
+
+- [Rhodium Advisors Home/About PT](https://www.rhodiumadvisors.com/): The Portuguese version of the homepage, with an introduction to Rhodium Advisors and a description of our servies.
+- [Rhodium Advisors Home/About EN](https://www.rhodiumadvisors.com/en/): The English version of the homepage, with an introduction to Rhodium Advisors and a description of our servies.
+
+## Contacts
+
+- [Rhodium Advisors Contacts PT](https://www.rhodiumadvisors.com/contact/): The Portuguese version of the contact page, with a form to allow clients to reach out to us.
+- [Rhodium Advisors Contacts EN](https://www.rhodiumadvisors.com/contact/en/): The English version of the contact page, with a form to allow clients to reach out to us

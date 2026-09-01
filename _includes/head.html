@@ -1,11 +1,36 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
+  {% if page.url == "/thank-you.html" %}
+  <meta http-equiv="refresh" content="5;url=https://www.rhodiumadvisors.com/en/" />
+  {% endif %}
+  {% if page.layout == "page" %}<meta name="robots" content="noindex, nofollow" />{% endif %}
   {%- seo -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rhodium Advisors",
+      "url": "https://www.rhodiumadvisors.com/",
+      "logo": "https://www.rhodiumadvisors.com/images/rhodium_full.png",
+      "email": "info@rhodiumadvisors.com",
+      "description": "Rhodium is a collaborative ecosystem with over 25 years of cross-functional experience that combines Law, Business and Commercial Strategy, Project Management, Architecture, Relocation, Hospitality, Real Estate Management, and Luxury Real Estate.\r\n\r\nIt advises funds and private investors on acquisitions of prime assets, corporate relocations, family offices, and hotel real estate projects.\r\n\r\nIt specializes in guiding clients through the legal and tax landscape of the Portuguese market, with a view to securing high-yield opportunities."
+    }
+  </script>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" />
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
+  {%- endif -%}
+  {%- if page.layout == "home" or page.layout == "home_en" -%}
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/" hreflang="pt" />
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/en/" hreflang="en" />
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/en/" hreflang="x-default" />
+  {%- endif -%}
+  {%- if page.layout == "contact" or page.layout == "contact_en" -%}
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/contact/" hreflang="pt" />
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/contact/en/" hreflang="en" />
+  <link rel="alternate" href="https://www.rhodiumadvisors.com/contact/en/" hreflang="x-default" />
   {%- endif -%}
 </head>

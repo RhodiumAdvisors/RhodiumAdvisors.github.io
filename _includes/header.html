@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <span class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/images/rhodium_emblem.png">{{ site.title | escape }}</span>
+    <span class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/images/rhodium_emblem.png" alt="Rhodium Advisors logo.">Rhodium Advisors</span>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -15,17 +15,30 @@
             </svg>
           </span>
         </label>
-      </nav>
-    {%- endif -%}
-    <nav class="site-nav">
+        
         <div class="trigger">
-          {% if page.layout == "home" %}
-          <a class="page-link" href="/en"><img src="/images/flags/gb.svg">EN</a>
+          {% unless page.layout contains "en" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/" hreflang="pt">Rhodium</a>
+          <a class="page-link" href="https://www.rhodiumadvisors.com/contact/" hreflang="pt">Contactos</a>
+          {% if page.layout contains "home" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/en/" hreflang="en"><img src="/images/flags/gb.svg" alt="Flag of Great Britain. Click to toggle language.">EN</a>
           {% endif %}
-          {% if page.layout == "en" %}
-          <a class="page-link" href="/"><img src="/images/flags/pt.svg">PT</a>
+          {% if page.layout contains "contact" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/contact/en/" hreflang="en"><img src="/images/flags/gb.svg" alt="Flag of Great Britain. Click to toggle language.">EN</a>
+          {% endif %}
+          {% endunless %}
+          {% if page.layout contains "en" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/en/" hreflang="en">Rhodium</a>
+          <a class="page-link" href="https://www.rhodiumadvisors.com/contact/" hreflang="en">Contacts</a>
+          {% if page.layout contains "home" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/" hreflang="pt"><img src="/images/flags/pt.svg" alt="Bandeira de Portugal. Carregue para alterar lingua.">PT</a>
+          {% endif %}
+          {% if page.layout contains "contact" %}
+          <a class="page-link" href="https://www.rhodiumadvisors.com/contact/" hreflang="pt"><img src="/images/flags/pt.svg" alt="Bandeira de Portugal. Carregue para alterar lingua.">PT</a>
+          {% endif %}
           {% endif %}
         </div>
       </nav>
+    {%- endif -%}
   </div>
 </header>

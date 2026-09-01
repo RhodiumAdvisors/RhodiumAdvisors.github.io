@@ -46,6 +46,15 @@ a:hover {
   .box {
     padding-top: 40px;
     padding-bottom: 40px;
+    
+    .form {
+      margin-left: -25%;
+      margin-right: -25%;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
 
     &:nth-child(2n-1) {
       background-color: #182E53;
@@ -97,6 +106,60 @@ a:hover {
   
 }
 
+input, select {
+  align-items: center;
+  background: #031028;
+  border: 0.5px solid #EFBF04;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  height: 60px;
+  width: 400px;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  margin: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+select:invalid {
+  color:#9b9b9b;
+}
+
+option {
+  color: #fff;
+}
+
+textarea {
+  align-items: center;
+  background: #031028;
+  border: 0.5px solid #EFBF04;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  height: 160px;
+  width: 824px;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  margin: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
 .site-title img {
   width: 50px;
   padding: 10px;
@@ -109,6 +172,19 @@ a:hover {
     padding-right: 10px;
   }
 }
+
+.footer{
+  h3{
+    position: relative;
+  }
+
+  img {
+    float: right;
+    width: 100px;
+    margin-top: -100px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .site-header {
     padding: 10px;
@@ -118,7 +194,7 @@ a:hover {
   .site-title, .site-title:visited {
     color: #fff;
     font-size: 36px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     img {
       width: 50px;
       padding: 0px;
@@ -135,22 +211,50 @@ a:hover {
     border: 0;
     border-radius: 5px;
     text-align: right;
-    font-size: 0;
+    font-size: 1.25rem;
+    
+    .page-link {
+      line-height: 2.25;
+    }
 
-    .menu-icon {
-      display: none;
+    path {
+      fill: #fff;
     }
   }
-}
 
-.footer{
-  h3{
-    position: relative;
+  .trigger {
+    border-radius: 8px;
+    padding-right: 15vw;
+    border: 0.5px solid #9b9b9b;
+    background-color: rgba(3, 16, 40, 1);
+    transition: 1s transform;
   }
 
-  img {
+  .site-nav input ~ .trigger {
+    display: block;
+    transform: translateX(50vw);
+    padding-bottom: 5px;
+  }
+
+  .site-nav input:checked ~ .trigger {
+    transform: translateX(10vw);
+  }
+
+  input, select {
+    width: 300px;
+  }
+
+  select {
+    height: 80px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  .footer img {
     float: right;
-    width: 100px;
-    margin-top: -100px;
+    width: 50px;
+    margin-top: -50px;
   }
 }
