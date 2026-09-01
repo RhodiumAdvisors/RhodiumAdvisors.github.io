@@ -2,11 +2,57 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
+  
+  {% if page.layout == "home" %}
+  <title> Imobiliário Legal & Fiscal | Portugal | Rhodium Advisors </title>
+  <meta name="description" content="Com 25 anos de experiência, a Rhodium guia investidores no imobiliário de luxo, legal e fiscal em Portugal, garantindo ativos de elevado rendimento.">
+  <link rel="canonical" href="https://www.rhodiumadvisors.com/">
+  <meta property="og:locale" content="pt">
+  <meta property="og:title" content="Imobiliário Legal & Fiscal | Portugal | Rhodium Advisors">
+  <meta property="og:description" content="Com 25 anos de experiência, a Rhodium guia investidores no imobiliário de luxo, legal e fiscal em Portugal, garantindo ativos de elevado rendimento.">
+  <meta property="og:url" content="https://www.rhodiumadvisors.com/">
+  <meta property="twitter:title" content="Imobiliário Legal & Fiscal | Portugal | Rhodium Advisors">
+  {% endif %}
+  {% if page.layout == "home_en" %}
+  <title> Real Estate | Legal and Tax | Portugal | Rhodium Advisors </title>
+  <meta name="description" content="Backed by 25 years of expertise, Rhodium guides investors through Portugal's legal, tax, and luxury real estate landscape to secure prime, high-yield assets.">
+  <link rel="canonical" href="https://www.rhodiumadvisors.com/en/">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="Real Estate | Legal and Tax | Portugal | Rhodium Advisors">
+  <meta property="og:description" content="Backed by 25 years of expertise, Rhodium guides investors through Portugal's legal, tax, and luxury real estate landscape to secure prime, high-yield assets.">
+  <meta property="og:url" content="https://www.rhodiumadvisors.com/en/">
+  <meta property="twitter:title" content="Real Estate | Legal and Tax | Portugal | Rhodium Advisors">
+  {% endif %}
+  {% if page.layout == "contact" %}
+  <title> Imobiliário Portugal | Rhodium Advisors </title>
+  <meta name="description" content="Imobiliário Portugal; Email. info@rhodiumadvisors.com;">
+  <link rel="canonical" href="https://www.rhodiumadvisors.com/contact/">
+  <meta property="og:locale" content="pt">
+  <meta property="og:title" content="Imobiliário Portugal | Rhodium Advisors">
+  <meta property="og:description" content="Imobiliário Portugal; Email. info@rhodiumadvisors.com;">
+  <meta property="og:url" content="https://www.rhodiumadvisors.com/contact/">
+  <meta property="twitter:title" content="Imobiliário Portugal | Rhodium Advisors">
+  {% endif %}
+  {% if page.layout == "contact_en" %}
+  <title> Real Estate Portugal | Rhodium Advisors </title>
+  <meta name="description" content="Real Estate Portugal; Email. info@rhodiumadvisors.com;">
+  <link rel="canonical" href="https://www.rhodiumadvisors.com/contact/en/">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="Real Estate Portugal | Rhodium Advisors">
+  <meta property="og:description" content="Real Estate Portugal; Email. info@rhodiumadvisors.com;">
+  <meta property="og:url" content="https://www.rhodiumadvisors.com/contact/en/">
+  <meta property="twitter:title" content="Real Estate Portugal | Rhodium Advisors">
+  {% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.rhodiumadvisors.com/images/rhodium_full.png">
+  <meta property="og:site_name" content="Rhodium Advisors">
+  <meta name="twitter:card" content="summary">
+  
+
   {% if page.url == "/thank-you.html" %}
   <meta http-equiv="refresh" content="5;url=https://www.rhodiumadvisors.com/en/" />
   {% endif %}
   {% if page.layout == "page" %}<meta name="robots" content="noindex, nofollow" />{% endif %}
-  {%- seo -%}
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
