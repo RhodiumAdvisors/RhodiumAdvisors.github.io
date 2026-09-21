@@ -5,5 +5,7 @@
 layout: home
 title: "Imobiliário Legal & Fiscal | Portugal | Rhodium Advisors"
 description: "Com 25 anos de experiência, a Rhodium guia investidores no imobiliário de luxo, legal e fiscal em Portugal, garantindo ativos de elevado rendimento."
-lang: pt
+lang: "pt"
+canonical: "https://www.rhodiumadvisors.com/"
+alt: "https://www.rhodiumadvisors.com/en/"
 ---

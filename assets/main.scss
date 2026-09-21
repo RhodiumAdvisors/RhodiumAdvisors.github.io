@@ -79,7 +79,7 @@ a:hover {
   height:auto;
   padding-top: 25px;
 
-  button {
+  button, a {
     align-items: center;
     background: #031028;
     border: 0.5px solid #EFBF04;
@@ -232,12 +232,12 @@ textarea {
 
   .site-nav input ~ .trigger {
     display: block;
-    transform: translateX(50vw);
+    transform: translateX(60vw);
     padding-bottom: 5px;
   }
 
   .site-nav input:checked ~ .trigger {
-    transform: translateX(10vw);
+    transform: translateX(15vw);
   }
 
   input, select {
