@@ -321,7 +321,7 @@ textarea {
 
   .list-data {
     position: absolute;
-    background: rgb(255,255,255,0.9);
+    background: rgba(255,255,255,0.9);
     height: 230px;
     width: 230px;
     top: 54%;
@@ -423,7 +423,7 @@ textarea {
   right: 5%;
   bottom: 5%;
   width: 200px;
-  background-color: rgb(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.9);
   border: 2.5px solid #EFBF04;
   border-radius: 8px;
   float: right;
@@ -542,7 +542,7 @@ textarea {
 }
 
 .error .notification-header  {
-  background-color: rgb(80, 0, 0, 1);
+  background-color: rgba(80, 0, 0, 1);
 }
 
 .notification-body {
