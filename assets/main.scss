@@ -422,7 +422,10 @@ textarea {
   position: fixed;
   right: 5%;
   bottom: 5%;
-  width: 200px;
+  min-width: 200px;
+  max-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgba(255,255,255,0.9);
   border: 2.5px solid #EFBF04;
   border-radius: 8px;

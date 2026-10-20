@@ -15,7 +15,7 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     switch(lang) {
         case "pt":
-            formText = "Submeter "+(tabName=="Properties"?"Propriedades":"Comparadores");
+            formText = "Submeter "+(tabName=="Properties"?"Propriedades":"Compradores");
             break;
         case "en":
         default:
