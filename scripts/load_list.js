@@ -210,9 +210,10 @@ function mailTo(lang,deal,location,structure,rooms,size,type,price,reference) {
 function buildPropertyList(msg) {
     const list = formatData(msg,this.responseText);
     const tab = document.getElementById("Properties");
+
     //console.log(list);
     for(var property in list) {
-        const v = list[property];
+        const v = list[Object.keys(list).length - property - 1];
 
         const propertyBox = document.createElement("div");
         propertyBox.className = "list-box";
@@ -265,7 +266,7 @@ function buildBuyerList(msg) {
     const tab = document.getElementById("Buyers");
     //console.log(list);
     for(var buyer in list) {
-        const v = list[buyer];
+        const v = list[Object.keys(list).length - buyer - 1];
 
         const buyerBox = document.createElement("div");
         buyerBox.className = "list-box";
