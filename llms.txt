@@ -10,4 +10,9 @@
 ## Contacts
 
 - [Rhodium Advisors Contacts PT](https://www.rhodiumadvisors.com/contact/): The Portuguese version of the contact page, with a form to allow clients to reach out to us.
-- [Rhodium Advisors Contacts EN](https://www.rhodiumadvisors.com/contact/en/): The English version of the contact page, with a form to allow clients to reach out to us
+- [Rhodium Advisors Contacts EN](https://www.rhodiumadvisors.com/contact/en/): The English version of the contact page, with a form to allow clients to reach out to us.
+
+## The List
+
+- [Rhodium Advisors List PT](https://www.rhodiumadvisors.com/list/): The Portuguese version of "The List - powered by Rhodium", a special list service focused on finding matches for off-market properties and buyers, currently in a closed memebers only beta test.
+- [Rhodium Advisors List EN](https://www.rhodiumadvisors.com/list/en/): The English version of "The List - powered by Rhodium", a special list service focused on finding matches for off-market properties and buyers, currently in a closed memebers only beta test.

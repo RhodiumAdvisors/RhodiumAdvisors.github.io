@@ -1,12 +1,12 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="header-wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <span class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/images/rhodium_emblem.png" alt="Rhodium Advisors logo.">Rhodium Advisors</span>
+    <span class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="/images/rhodium_emblem.png" alt="Rhodium Advisors logo.">{% if page.layout=="list" or page.layout=="list_en" %}{% if page.lang == "pt" %}A Lista{% else %}The List{% endif %}<span> - powered by Rhodium</span>{% else %}Rhodium Advisors{% endif %}</span>
 
     {%- if page_paths -%}
-      <nav class="site-nav">
+      <div class="nav-wrapper"><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -20,15 +20,17 @@
           {% if page.lang == "pt" %}
             <a class="page-link" href="https://www.rhodiumadvisors.com/" hreflang="pt">Rhodium</a>
             <a class="page-link" href="https://www.rhodiumadvisors.com/contact/" hreflang="pt">Consulta</a>
+            <a class="page-link" href="https://www.rhodiumadvisors.com/list/" hreflang="pt">Lista <span>(BETA)</span></a>
             <a class="page-link" href="{{ page.alt }}" hreflang="en"><img src="/images/flags/gb.svg" alt="Flag of Great Britain. Click to toggle language.">EN</a>
           {% endif %}
           {% if page.lang == "en" %}
             <a class="page-link" href="https://www.rhodiumadvisors.com/en/" hreflang="en">Rhodium</a>
             <a class="page-link" href="https://www.rhodiumadvisors.com/contact/en/" hreflang="en">Consultation</a>
+            <a class="page-link" href="https://www.rhodiumadvisors.com/list/en/" hreflang="pt">List <span>(BETA)</span></a>
             <a class="page-link" href="{{ page.alt }}" hreflang="pt"><img src="/images/flags/pt.svg" alt="Bandeira de Portugal. Carregue para alterar lingua.">PT</a>
           {% endif %}
         </div>
-      </nav>
+      </nav></div>
     {%- endif -%}
   </div>
 </header>
